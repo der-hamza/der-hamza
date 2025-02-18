@@ -60,14 +60,14 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to the treasure Island.")
 print("Your mission is to find the treasure.")
-step_1 = input("You are at the cross road. Where do you want to go? \n Please type left or right :")
-
-#step_3 = input("Which door you want to open? \n Please type red, yellow or blue")
-
+step_1 = input('You are at the cross road. Where do you want to go? '
+               'Please type "left" or "right".\n').lower()
 if step_1 == "left":
-    step_2 = input("What you want to do now? \n Please type swim or wait :")
+    step_2 = input('What you want to do now? '
+                   'Please type "swim" or "wait".\n').lower()
     if step_2 == "wait":
-        step_3 = input("Which door you want to open? \n Please type red, yellow or blue :")
+        step_3 = input('Which door you want to open? '
+                       'Please type "red", "yellow" or "blue"\n').lower()
         if step_3 =="red":
             print("Burned by fire. Game Over")
         elif step_3 =="yellow":
